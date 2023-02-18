@@ -1,1 +1,1 @@
-# my_bash_scripts
+# This repository is for self-written bash scripts
