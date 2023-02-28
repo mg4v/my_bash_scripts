@@ -2,4 +2,4 @@
 ## Этот скрипт просто выводит содержимое файла со списком
 ### репозиториев для утилиты apt в ubuntu
 
-cat /etc/apt/sources.list
+grep "^[^#]" /etc/apt/sources.list
