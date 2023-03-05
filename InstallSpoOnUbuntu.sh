@@ -3,4 +3,4 @@
 
 apt update && \
 apt install \
-git mc htop bashtop neofetch tmux lynx vim nano wget openssh-server -y
+git mc htop bashtop neofetch tmux lynx vim nano wget openssh-server net-tools -y
