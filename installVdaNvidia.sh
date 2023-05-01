@@ -3,14 +3,14 @@
 nvidia_vers=`ubuntu-drivers devices | grep -i recommended`
 
 if lspci | grep -i nvidia ; then
-  echo "The system has an NVIDIA graphics card"
-  echo "<------>"
-  read -p "Do you want to install the video $nvidia_vers version?" -n 1 -r
-  echo    # (optional) move to a new line
-  if [[ ! $REPLY =~ ^[Yy]$ ]]
+  echo -e "The system has an NVIDIA graphics card \nCurrent driver version:\n"
+  cat /proc/driver/nvidia/version
+  echo -e "<------>\nDo you want to install the video\n$nvidia_vers version?"
+  read -p ": " -n 1 -r
+  if [[ $REPLY =~ ^[Yy]$ ]]
   then
-   ubuntu-drivers autoinstall -y
+    ubuntu-drivers autoinstall
   else
-    breack 
+    echo -e "\nThe driver installation was interrupted by the user\n" 
   fi
 fi
