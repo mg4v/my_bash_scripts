@@ -3,4 +3,5 @@
 
 apt update && \
 apt install \
-git mc htop bashtop neofetch tmux lynx vim nano wget openssh-server net-tools -y
+git mc htop bashtop neofetch tmux lynx vim nano wget \
+openssh-server net-tools ubuntu-restricted-extras -y
