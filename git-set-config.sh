@@ -7,7 +7,7 @@
 ## - Предпочтительный редактор текстов.
 
 # Например:
-## ./git_set_config.sh myuser myuser@email.org vim
+## ./git-set-config.sh myuser myuser@email.org vim
 
 git config --global user.name $1
 git config --global user.email $2
