@@ -1,12 +1,25 @@
-# git_pull.sh - автоматически загружает изменения из удаленного репозитория
-# git_push.sh - автоматически выполняет add, commit, push в удаленный репозиторий
-# IstallSpoOnUbuntu.sh - installs the minimum set of system software in ubuntu that I need.
-## !требуется sudo.
-# ubuntu_list_repos.sh - Этот скрипт просто выводит содержимое файла со списком репозиториев для утилиты apt в ubuntu.
-# UpdateApt.sh - Получаем список обновлений и обновляем систему. !требуется sudo.
-# gitclone_and_touch-s_links-2-hd.sh - создать в домашней директории папку REPO,
-## клонировать в нее репозитории с конспектами и скриптами, и создать магкие ссылки в $HOME
-# enable_layout_by-capslock.sh - назначить смену раскладки клавиатуры клавише "Caps Lock",
-## !требуется sudo.
-# installVdaNvidia.sh - устанавливает nvidia драйвер для видеокарты. !требуется sudo.
-# git_sync.sh - сравнивает содержимое двух директорий - и синхронизирует содержимое директории 1 с директорией 2
+### Описание скриптов в алфавитном порядке
+
+- **`dnd_dice_roller.sh`** — инструмент для виртуальных бросков кубиков Dungeons & Dragons (d4, d6, d8, d10, d12, d20).
+- **`enable_layout_by-capslock.sh`** — назначает клавишу Caps Lock для смены языковой раскладки клавиатуры.
+- **`git-set-config.sh`** — устанавливает глобальные настройки пользователя для системы контроля версий Git.
+- **`git_pull.sh`** — автоматическое обновление локальной копии Git-репозитория из удалённой версии.
+- **`git_push.sh`** — пакетная команда для отправки изменений в удалённый Git-репозиторий (`add`, `commit`, `push`).
+- **`gitclone_and_touch-s_links-2-hd.sh`** — клонирование двух проектов с GitHub и создание символических ссылок на них в домашней директории.
+- **`haproxy_install_fedora.sh`** — установка балансировщика нагрузки HAProxy на операционной системе Fedora.
+- **`haproxy_install_ubuntu.sh`** — аналогичная процедура установки HAProxy, но для ОС Ubuntu.
+- **`installSpoOnUbuntu.sh`** — простая настройка окружения Ubuntu путём автоматической установки необходимых пакетов.
+- **`installVdaNvidia.sh`** — инсталляция драйверов графической карты NVidia на вашу систему.
+- **`nginx_install_fedora.sh`** — установка веб-сервера Nginx на дистрибутиве Fedora с заменой страницы по умолчанию.
+- **`nginx_install_ubuntu.sh`** — аналогичный скрипт для установки Nginx на Ubuntu.
+- **`nginx_install_ubuntu_with_new_site.sh`** — установка Nginx на Ubuntu с добавлением нового сайта по умолчанию.
+- **`nginx_install_secure_user_ubuntu.sh`** — продвинутый способ установки Nginx на Ubuntu с поддержкой отдельного пользователя для управления сайтом.
+- **`nginx_uninstall_and_cleanup_ubuntu.sh`** — полная деинсталляция сервера Nginx на Ubuntu с очисткой всех ресурсов.
+- **`nginx_uninstall_clean_secure_ubuntu.sh`** — наиболее тщательная версия удаления Nginx с полным стиранием настроек и пользователей.
+- **`passgen.sh`** — простой генератор сложных паролей заданной длины.
+- **`setup_keyboard_layout_debian.sh`** - настройка в debian двойной раскладки клавиатуры и ее переключения.
+- **`uninstall_haproxy_fedora.sh`** — деинсталлятор HAProxy для Fedora.
+- **`ubuntu_list_repos.sh`** — отображает список установленных репозиториев apt-get на вашей Ubuntu-машине.
+- **`updateApt.sh`** — обновляет пакеты системы Ubuntu до последней доступной версии.
+- **`date2unixtime.sh`** — преобразование формата даты в Unix timestamp.
+- **`unixtime2date.sh`** — обратное преобразование из Unix time обратно в читаемую дату.
